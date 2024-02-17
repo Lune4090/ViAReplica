@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "loading julia with current dir env..."
+
+julia --threads=4 --sysimage="SysIm.so"

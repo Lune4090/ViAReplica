@@ -1,0 +1,43 @@
+# non-commented item are automatically set, so never touch them. 
+[rawdata]
+
+[rawdata.data]
+  name = ""
+  ext  = ".dat" # register data extension
+  header_commentout = "#" # register header which means the row is commented out
+  datacollector = "wavedatapacker" # at now, only wavedatapacker() can be used.
+
+[rawdata.comment] # if you want to write what can be seen from julia scripts, write them here.
+
+[root-replica]
+
+[root-replica.data]
+  name = ""
+  measurement = "IdVd" # register what measurement was done
+  equipment = "IdVd" # register used equipment
+  device = "IdVd" # register device name
+  ext  = ""
+  contents = []
+  size = []
+  axisnames = ["Id", "Vd", "Vg"] # register each axis' names
+
+[root-replica.comment] # if you want to write what can be seen from julia scripts, write them here.
+
+[mod-replica]
+
+[mod-replica.data]
+  name = ""
+  measurement = ""
+  equipment = ""
+  device = ""
+  contents = []
+  size = []
+  axisnames = []
+
+[mod-replica.drawing]
+  template = "test"
+
+[mod-replica.analysis]
+  template = "test"
+
+[mod-replica.comment] # if you want to write what can be seen from julia scripts, write them here.

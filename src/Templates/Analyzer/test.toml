@@ -1,0 +1,16 @@
+# non-commented item are automatically set, so never touch them. 
+
+[analysisinfo]
+  targets = ["Id", "Vd"]
+[analysisinfo.curvefit]
+  enable = false
+  functype = ""
+  funcnum = 0
+[analysisinfo.smoothing]
+  enable = false
+  window = 0
+[analysisinfo.baselinesubtraction]
+  enable = false
+  algorithm = "BEADS"
+  
+  
