@@ -1,9 +1,0 @@
-# non-commented item are automatically set, so never touch them. 
-
-[drawinginfo]
-  axis = "Axis" # select axis from Axis, Axis3
-  plot = "lines" # select from lines, scatter, band, barplot, boxplot, density, heatmap(only for Axis 3D), image(only for Axis), pie
-  drawingtargetaxis = ["Id", "Vd"]
-  colors = [":red", ":blue"]
-  line = ["plain", ":plain"]
-  axis_setting = {}

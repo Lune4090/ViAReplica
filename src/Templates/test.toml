@@ -34,8 +34,17 @@
   size = []
   axisnames = []
 
-[mod-replica.drawing]
-  template = "test"
+[mod-replica.visualization]
+  template = ""
+[mod-replica.visualization.axis]
+  figure = [1, 1]
+  title = "cell_1"
+  xticksmirrored = true
+  xminorticksvisible = true
+  xtickalign = 1
+  xminortickalign = 1
+  ytickalign = 1
+  yminortickalign = 1
 
 [mod-replica.analysis]
   template = "test"

@@ -11,7 +11,7 @@ include("Utilities/ParseInputTOML.jl")
 dir_rawdata = "RawdataStation"
 dest_rawdata = "RawdataWarehouse"
 dest_replica = "ReplicaHolder"
-dir_inputfiles = "Templates/Generator"
+dir_inputfiles = "Templates"
 
 path_dir_rawdata = joinpath(@__DIR__, dir_rawdata)
 path_dest_rawdata = joinpath(@__DIR__, dest_rawdata)
@@ -19,7 +19,7 @@ path_dest_replica = joinpath(@__DIR__, dest_replica)
 path_dir_inputfiles = joinpath(@__DIR__, dir_inputfiles)
 
 
-function generatereplica(templatename::String)
+function generate_replica(templatename::String)
 	# load template
 	template = read_inputfiles(path_dir_inputfiles; filename=templatename)[1]
 	data_ext = template["rawdata"]["data"]["ext"]
@@ -68,10 +68,3 @@ function generatereplica(templatename::String)
 	end
 	return nothing
 end
-
-
-
-
-
-
-
